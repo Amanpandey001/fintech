@@ -12,7 +12,8 @@
 # next.js
 /.next/
 /out/
-
+roadmap.txt
+.env
 # production
 /build
 
