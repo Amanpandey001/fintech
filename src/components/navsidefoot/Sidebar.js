@@ -37,6 +37,7 @@ const Sidebar = () => {
                     <li className='w-full flex justify-center items-center'><Link className='px-[25%] py-2 hover:bg-teal-600 hover:text-white active:bg-teal-500 rounded-lg transition-all duration-150 text-xl font-bold bg-teal-200 ' href='/dashboard'>Dashboard</Link></li>
                     <li className='w-full flex justify-center items-center'><Link className='px-[25%] py-2 hover:bg-teal-600 hover:text-white active:bg-teal-500 rounded-lg transition-all duration-150 text-xl font-bold bg-teal-200 ' href='/tips'>Tips</Link></li>
                     <li className='w-full flex justify-center items-center '><button onClick={logout} className='px-[25%] py-2 hover:bg-teal-600 hover:text-white active:bg-teal-500 rounded-lg transition-all duration-150 text-xl font-bold bg-teal-200 ' >Logout</button></li>
+                    
                 </ul>
                 <div className='fixed bottom-0'>
                     <Footer />

@@ -23,7 +23,7 @@ const Profile = () => {
   if (!userData) return <div>Loading...</div>;  
 
   return (
-    <div>
+    <div className='w-full p-1'>
       <Dashboard
         name={userData.name}
         image={userData.image}
