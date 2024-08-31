@@ -29,6 +29,7 @@ export async function POST(req) {
 
         const response = NextResponse.json({ result: { email: existingUser.email } }, { status: 200 });
         console.log("email:", existingUser.email);
+        console.log("response:", response);
         response.cookies.set("access_token", token, {
             httpOnly: true,
             sameSite: "strict",

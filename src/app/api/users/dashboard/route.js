@@ -8,7 +8,7 @@ export async function POST(req) {
     try {
         const userId = await getDataFromToken(req);
         console.log("userId:", userId);
-        const user = await User.findOne({userId}).select("-password");
+        const user = await User.findById(userId).select("-password");
         console.log("user:", user);
         return NextResponse.json({ message: "User fetched successfully" , user });
     } catch (error) {
